@@ -66,3 +66,43 @@ The user interface shall be intuitive and easy to use, with clear labels and inp
 The mobile application shall provide users with a convenient way to input anonymous symptoms they are experiencing and key health metrics, and receive potential conditions based on the OpenAI API. The application shall be secure, reliable, and scalable to accommodate a large number of users and data. The application shall convert the potential conditions provided by the OpenAI API into a downloadable PDF file that the user can bring to their GP.
 
 #
+# Development Roadmap
+
+### Planning and Research Phase
+- Conduct market research to understand the needs and preferences of potential users
+- Define the scope of the project, including features and functionality
+- Create wireframes and UI/UX design for the application
+- Determine the appropriate technology stack to use for development
+
+
+### Backend Development Phase
+- Set up the development environment
+- Create the backend architecture and APIs using Node.js
+- Implement OpenAI API integration and testing
+- Develop PDF generation functionality
+
+
+### Frontend Development Phase
+- Develop the user interface using React Native
+- Implement user input functionality for symptoms and health metrics
+- Integrate the OpenAI API with the user input data
+- Implement PDF download functionality
+
+
+### Testing and Debugging Phase
+- Conduct unit and integration testing
+- Identify and fix any bugs or issues
+- Test the application on different devices and platforms
+
+
+### Deployment Phase
+- Deploy the application to the app stores (Google Play and Apple App Store)
+- Ensure the application meets the store's requirements and guidelines
+- Provide documentation and support for the users
+
+
+### Maintenance Phase
+- Provide ongoing maintenance and support for the application
+- Monitor user feedback and analytics to identify areas for improvement
+- Regularly update the application to ensure compatibility with new technologies and platforms
+#
