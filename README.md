@@ -74,19 +74,12 @@ The mobile application shall provide users with a convenient way to input anonym
 - Create wireframes and UI/UX design for the application
 - Determine the appropriate technology stack to use for development
 
-
-### Backend Development Phase
-- Set up the development environment
-- Create the backend architecture and APIs using Node.js
-- Implement OpenAI API integration and testing
-- Develop PDF generation functionality
-
-
 ### Frontend Development Phase
+- Set up the development environment
 - Develop the user interface using React Native
 - Implement user input functionality for symptoms and health metrics
-- Integrate the OpenAI API with the user input data
-- Implement PDF download functionality
+- Make direct calls to the OpenAI API with user input data
+- Implement PDF generation functionality
 
 
 ### Testing and Debugging Phase
@@ -101,7 +94,7 @@ The mobile application shall provide users with a convenient way to input anonym
 - Provide documentation and support for the users
 
 
-### Maintenance Phase
+Maintenance Phase
 - Provide ongoing maintenance and support for the application
 - Monitor user feedback and analytics to identify areas for improvement
 - Regularly update the application to ensure compatibility with new technologies and platforms
