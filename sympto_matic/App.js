@@ -20,6 +20,7 @@ export default function App() {
               color={isChecked ? "#2d936c" : "#ffffff"}
             />
             <Button
+            // onPress={undefined}
               disabled={isChecked ? false : true}
               color={isChecked ? "#2d936c" : undefined}
               title="Continue"
@@ -71,10 +72,7 @@ const styles = StyleSheet.create({
   disclaimerCheckbox: {
     marginTop: "5%",
     padding: "5%",
-  },
-  checkboxBtn: {
-    marginTop: "10%",
-  },
+  }
 });
 
 const disclaimerText =
