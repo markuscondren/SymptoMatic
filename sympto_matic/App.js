@@ -20,7 +20,6 @@ export default function App() {
               color={isChecked ? "#2d936c" : "#ffffff"}
             />
             <Button
-            // onPress={undefined}
               disabled={isChecked ? false : true}
               color={isChecked ? "#2d936c" : undefined}
               title="Continue"
