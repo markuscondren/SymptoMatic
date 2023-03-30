@@ -1,15 +1,26 @@
-import { CheckBox } from "expo-checkbox";
+import React, { useState } from "react";
+import CheckBox from "expo-checkbox";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, SafeAreaView, View } from "react-native";
+import { StyleSheet, Text, SafeAreaView, View, Button } from "react-native";
 
 export default function App() {
+  const [isChecked, setChecked] = useState(false);
+
   return (
     <SafeAreaView style={styles.container}>
       <View>
         <View style={styles.disclaimerView}>
           <Text style={styles.disclaimerHeading}>Disclaimer</Text>
           <Text style={styles.disclaimerText}>{disclaimerText}</Text>
-          <CheckBox value={false} />
+          <View style={styles.disclaimerCheckboxView}>
+            <CheckBox
+              style={styles.disclaimerCheckbox}
+              value={isChecked}
+              onValueChange={setChecked}
+              color={isChecked ? "#2d936c" : undefined}
+            />
+            <Button title="Continue" />
+          </View>
         </View>
       </View>
       <StatusBar style="auto" />
@@ -44,6 +55,19 @@ const styles = StyleSheet.create({
   disclaimerText: {
     fontSize: 12,
     color: "#ffffff",
+    paddingBottom: "5%",
+  },
+  disclaimerCheckboxView: {
+    fontSize: 10,
+    color: "#ffffff",
+    alignContent: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+    justifyContent: "center",
+  },
+  disclaimerCheckbox: {
+    marginTop: "5%",
+    padding: "5%",
   },
 });
 
