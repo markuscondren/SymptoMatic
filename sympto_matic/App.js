@@ -17,9 +17,13 @@ export default function App() {
               style={styles.disclaimerCheckbox}
               value={isChecked}
               onValueChange={setChecked}
-              color={isChecked ? "#2d936c" : undefined}
+              color={isChecked ? "#2d936c" : "#ffffff"}
             />
-            <Button title="Continue" />
+            <Button
+              disabled={isChecked ? false : true}
+              color={isChecked ? "#2d936c" : undefined}
+              title="Continue"
+            />
           </View>
         </View>
       </View>
@@ -60,14 +64,16 @@ const styles = StyleSheet.create({
   disclaimerCheckboxView: {
     fontSize: 10,
     color: "#ffffff",
-    alignContent: "center",
+    alignContent: "right",
     justifyContent: "center",
     flexDirection: "column",
-    justifyContent: "center",
   },
   disclaimerCheckbox: {
     marginTop: "5%",
     padding: "5%",
+  },
+  checkboxBtn: {
+    marginTop: "10%",
   },
 });
 
